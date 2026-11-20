@@ -1,0 +1,15 @@
+Healthcare SDLC selection criteria.
+
+Stable requirements and extensive approvals → Waterfall.
+Patient-safety impact with strict verification and validation → V-Model.
+High clinical, technical, privacy, or interoperability uncertainty → Spiral.
+Frequently changing workflows and strong stakeholder feedback → Agile with explicit safety and security gates.
+Continuous secure deployment and operational monitoring → DevSecOps.
+Regulated healthcare with evolving requirements → named hybrid such as iterative delivery plus V-Model verification gates and DevSecOps controls.
+
+Decision factors to extract from a specification before choosing:
+requirement stability; patient-safety impact; regulatory and privacy criticality; security risk; project complexity; interoperability and legacy-system dependence; frequency of expected changes; need for continuous delivery; availability of clinicians and other stakeholders; testing and documentation requirements; budget and schedule constraints; need for formal verification; consequences of system failure.
+
+Produce ranked recommendations with justification, then a project-specific workflow: phases, activities, roles, deliverables, security activities, testing, compliance checkpoints, human-approval gates, entry and exit criteria, traceability.
+
+Related corpus: ABDM health-data policy and HIP/HIU guidance; EHR Standards for India; MoHFW telemedicine guidance; CERT-In generative-AI advisory; NASA systems engineering handbook; NIST AI/security material.

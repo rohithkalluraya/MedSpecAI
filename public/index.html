@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f6f8f7" />
+  <title>MedSpec AI | Healthcare Requirements Workspace</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar">
+      <div class="brand"><span class="brand-mark">M</span><span>MedSpec <b>AI</b></span></div>
+      <div class="sidebar-rule"></div>
+      <p class="eyebrow">LOCAL WORKSPACE</p>
+      <nav>
+        <a class="nav-item active" href="#workspace"><span class="nav-dot"></span>Requirements workspace</a>
+        <a class="nav-item" href="#how-it-works"><span class="nav-dot outline"></span>How it works</a>
+      </nav>
+      <div class="sidebar-bottom">
+        <p class="eyebrow">PROCESSING</p>
+        <p class="local-status"><span class="status-dot"></span>Local LM Studio</p>
+        <p class="muted small">Your brief stays on the configured machine.</p>
+      </div>
+    </aside>
+
+    <main class="main-content" id="workspace">
+      <header class="topbar"><div><p class="eyebrow">HEALTHCARE REQUIREMENTS</p><h1>Project workspace</h1></div><div class="topbar-meta">India · Synthetic data only</div></header>
+
+      <section class="intro-card">
+        <div><p class="eyebrow teal">MEDSPEC AI</p><h2>Turn a healthcare brief into a plan your team can review.</h2><p class="muted intro-copy">Describe the product, users, workflows, and constraints. MedSpec AI retrieves relevant local evidence, structures the requirements, and recommends a suitable SDLC.</p></div>
+        <div class="intro-note"><span class="note-icon">i</span><span>Requirements are generated for review. Clinical, privacy, security, and regulatory decisions remain with authorised people.</span></div>
+      </section>
+
+      <section class="workspace-grid">
+        <div class="input-panel panel">
+          <div class="panel-heading"><div><p class="eyebrow">01 · PROJECT BRIEF</p><h3>What are you building?</h3></div><span class="counter" id="char-count">0</span></div>
+          <textarea id="prompt" placeholder="Example: Build a patient portal for a fictional Indian hospital with appointments, synthetic lab reports, consent management, clinician access, audit logs, and ABDM aligned exchange."></textarea>
+          <div class="input-footer"><span class="muted small">Use fictional or anonymised information.</span><button class="primary-button" id="generate-button">Generate analysis <span>→</span></button></div>
+        </div>
+        <div class="steps-panel panel" id="how-it-works">
+          <p class="eyebrow">02 · PROCESS</p><h3>What happens next</h3>
+          <ol class="process-list"><li><span>1</span><div><b>Retrieve evidence</b><p>Search the local healthcare corpus.</p></div></li><li><span>2</span><div><b>Structure requirements</b><p>Identify journeys, controls, risks, and gaps.</p></div></li><li><span>3</span><div><b>Select an SDLC</b><p>Match the lifecycle to project risk.</p></div></li></ol>
+          <div class="evidence-chip">BM25 retrieval · LM Studio · Mastra workflow</div>
+        </div>
+      </section>
+
+      <section class="result-section hidden" id="result-section">
+        <div class="result-heading"><div><p class="eyebrow teal">03 · REVIEW OUTPUT</p><h2>Analysis ready</h2></div><div class="result-actions"><button class="secondary-button" id="download-button">Download Markdown</button><button class="secondary-button" id="new-button">New brief</button></div></div>
+        <div class="result-tabs"><button class="tab active" data-tab="document">Complete document</button><button class="tab" data-tab="requirements">Requirements</button><button class="tab" data-tab="sdlc">SDLC recommendation</button></div>
+        <article class="result-card" id="result-content"></article>
+      </section>
+
+      <section class="loading-section hidden" id="loading-section"><div class="loader"></div><div><b id="loading-title">Retrieving healthcare evidence</b><p id="loading-detail" class="muted">The local workflow is preparing your analysis. This can take a few minutes on a local model.</p></div></section>
+      <div class="error-banner hidden" id="error-banner"></div>
+      <footer>MedSpec AI <span>·</span> Local requirements engineering workspace <span>·</span> Not medical or legal advice</footer>
+    </main>
+  </div>
+  <script src="/app.js"></script>
+</body>
+</html>

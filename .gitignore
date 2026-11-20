@@ -1,0 +1,9 @@
+.env
+.cursor
+.mastra
+artifacts
+node_modules
+architect.db-shm
+architect.db-wal
+architect.db
+
