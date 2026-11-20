@@ -42,7 +42,6 @@ MASTRA_DATABASE_URL=file:./architect.db
 MASTRA_TELEMETRY_DISABLED=1
 ```
 
-Do not commit secrets, database files, private documents, or real patient information.
 
 ## Licence
 
