@@ -1,6 +1,6 @@
 # RAG Corpus and Skill Source Report
 
-Retrieved for the healthcare conversion. Only `docs/ingested/**/*.{txt,md,yaml}` is indexed at startup; retained PDFs and HTML are source originals where available. The corpus is evidence for traceable requirements analysis, not legal or medical advice. Jurisdiction, applicability, amendments, and final decisions require authorised review.
+Retrieved for the healthcare conversion. Only `docs/ingested/**/*.{txt,md,yaml}` is indexed at startup; retained PDFs and HTML are source originals where available. The corpus is evidence for traceable requirements analysis, not legal or health advice. Jurisdiction, applicability, amendments, and final decisions require authorised review.
 
 ## Included healthcare evidence
 
