@@ -36,7 +36,7 @@ Set the LM Studio values in `.env`:
 ```env
 LM_STUDIO_BASE_URL=http://127.0.0.1:1234/v1
 LM_STUDIO_API_KEY=lm-studio
-LM_STUDIO_MODEL=qwen/qwen3-vl-8b
+LM_STUDIO_MODEL=qwen/qwen3-8b
 MEDSPEC_WORKSPACE_ROOT=
 MASTRA_DATABASE_URL=file:./architect.db
 MASTRA_TELEMETRY_DISABLED=1
